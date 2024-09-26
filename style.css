@@ -1,0 +1,30 @@
+.btn{
+    height: 30px;
+    width: 80px;
+    border: 2px solid brown;
+    background-color: rgb(54, 24, 252);
+    border-radius: 15px;
+    color: rgb(251, 241, 214);
+    margin: 20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+font-size: medium;
+}
+
+ div{
+    margin-top: 100px;
+    margin-left: 140px;
+    font-weight: 560;
+    font-style: normal;
+    
+ }
+
+ body{
+    background-color: rgb(245, 195, 255);
+ }
+
+ .btn:hover{
+    background-color: rgb(28, 60, 1)
+ }
+#demo{
+    margin-left: -10px;
+}

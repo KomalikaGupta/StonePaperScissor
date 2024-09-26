@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href=https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css>
+</head>
+<body>
+    <div>
+ <button  class="btn" onclick="sample('stone')" ><i class="fa-regular fa-hand-back-fist"></i>Stone</button>
+ <button class="btn" onclick="sample('paper')"><i class="fa-regular fa-hand"></i>Paper</button>
+ <button class="btn" onclick="sample('scissor')"><i class="fa-regular fa-hand-scissors"></i>Scissor</button>
+ 
+  <p id="demo">Your Result is here</p>
+
+</div>
+     <script>
+ 
+  function sample(playerchoice){
+
+    let choices=['stone','paper','scissor'] 
+    var computerchoose = choices[Math.floor(Math.random()*3)]
+     let result = " "
+      if(playerchoice===computerchoose){
+        result ="it's a  tie"
+      } else if((playerchoice==='stone' && computerchoose==='scissor')
+      ||(playerchoice==='paper' &&  computerchoose==='stone') 
+      ||(playerchoice==='scissor' && computerchoose==='paper')){
+        result="You Win"
+     }else{
+        result="You Loose"
+      }
+
+      document.getElementById("demo").innerHTML=`You choose ${playerchoice}, 
+      computerchoice ${computerchoose},Your result  is ${result}` 
+      
+  }
+  
+     </script>
+</body>
+</html>
